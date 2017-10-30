@@ -1,5 +1,5 @@
 def roll_call_dwarves(array)
-  yield
+  array.each_with_index {|name, index| "#{index}. #{name}"}
 end
 
 def summon_captain_planet# code an argument here
@@ -14,3 +14,4 @@ def find_the_cheese# code an argument here
   # the array below is here to help
   cheese_types = ["cheddar", "gouda", "camembert"]
 end
+
